@@ -1,0 +1,16 @@
+<%- include('includes/header') %> 
+<div class="container">
+    <div class="content">
+        <div class="main">
+            <div class="video mt-5">
+                <h3 class="video__title"><%= video.title %></h3>
+                <video class="video__content" poster="/placeholder.jpg" controls>
+                    <source src="/video/<%= video.id %>?path=<%= path %>" type="video/mp4">
+                    </video>
+                    <p class="video__description"><%= video.description %></p>
+                    <a href="/" type="button" class="btn btn-success mt-3">К списку видео</a>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('includes/footer') %> 

@@ -1,0 +1,15 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">дата</th>
+            <th scope="col">название</th>
+            <th scope="col">описание</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% videos.forEach(video=>{ %> 
+            <%- include('row',{video}) %> 
+        <% }) %> 
+    </tbody>
+</table>

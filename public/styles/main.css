@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+.main {
+    flex-grow: 1;
+    min-width: 80%;
+}
+
+.main__footer_image {
+    max-width: 1000px;
+}
+
+.infopage__return {
+    text-align: center;
+}
+
+.infopage__title {
+    text-align: center;
+}
+
+.main__videoitems {
+    margin: 100px auto;
+    width: 80%;
+}
+
+.video {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 60%;
+}
+
+@media(max-width:800px) {
+    .video {
+        width: 100%;
+    }
+}
+
+.video__content[poster] {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video__content {
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, .3);
+}
